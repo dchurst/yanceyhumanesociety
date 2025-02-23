@@ -1085,8 +1085,219 @@ footer {
 
 	/***** HOME PAGE STYLES *****/
 
+	/* HERO BANNER STYLES */
+
 	#home-hero-banner {
 		margin-top: 25px;
+	}
+
+	#home-hero-banner div {
+		grid-column: 1 / 3;
+		margin: 50px;
+		width: 50%
+	}
+
+	#home-hero-banner div h2 {
+		margin-bottom: 50px;
+	}
+
+	/* EFFORTS STYLES */
+
+	#efforts-cta {
+		display: grid;
+		grid-auto-rows: auto;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#efforts-cta h2 {
+		place-self: center;
+		grid-column: 1 / 3;
+		grid-row: 1;
+		margin-bottom: 20px;
+	}
+
+	#efforts-cta section a {
+		width: 125px;
+	}
+
+	/* ADDITIONAL INFO STYLES */
+
+	#efforts-additional-info div {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+	
+
+	.text-left-align img {
+		grid-column: 2;
+	}
+
+	#efforts-additional-info div section {
+		align-items: start;
+		text-align: left;
+	}
+
+	.text-left-align section {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	/* IMPACT STYLES */
+
+	#impact div section {
+		margin-bottom: 50px;
+	}
+
+	#impact div section h3 {
+		font-size: 28px;
+		margin-bottom: 10px;
+	}
+
+	/* DONATION STYLES */
+
+	#donate section {
+		display: flex;
+		flex-direction: row;
+		width: 85%;
+	}
+
+	#donate section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 20px 15px;
+	}
+
+	#donate section h3 {
+		grid-column: 1 / 2;
+		grid-row: 1;
+		margin: 0 150px 0 0;
+		width: 100%;
+	}
+
+	#donate section div {
+		grid-column: 2 / 4;
+		grid-row: 1;
+		justify-self: end;
+	}
+
+	#donate section button {
+		margin: 0 5px 0;
+		padding: 10px 15px;
+	}
+
+	/* PET SEARCH STYLES */
+
+	#pet-search form {
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+		padding: 30px 15px;
+	}
+
+	#pet-search form div {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#pet-search form div label,
+	#pet-search form div select,
+	#pet-search form button {
+		margin: 0;
+	}
+
+	#pet-search form div label,
+	#pet-search form div select {
+		margin-right: 5px;
+	}
+
+	#pet-search form button {
+		margin-left: 20px;
+	}
+
+	/* SPECIAL OFFERS STYLES */
+
+	#offers-grid  {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.offers-content p {
+		max-width: 450px;
+	}
+
+	.offers-content a  {
+		padding: 5px 50px;
+	}
+
+	/*****ADOPTION INFO TABLET STYLES *****/
+
+	#adoptinfo-herobanner {
+		place-items: center;
+		gap: 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 35px;
+	}
+
+	#adoptinfo-herobanner img {
+		grid-column: 2;
+		grid-row: 1;
+		margin: 0 0 0 20px;
+	}
+
+	#adoptinfo-herobanner section {
+		align-items: flex-start;
+		margin-left: 30px;
+		text-align: left;
+	}
+
+	#adoptinfo-herobanner section a {
+		margin-top: 30px;
+	}
+
+	#adoption-info,
+	#important-adopt-info,
+	#adoption-fees,
+	#adoption-faqs {
+		margin-top: 40px;
+		width: 70%;
+	}
+
+	/***** ADOPTABLE PETS TABLET STYLES *****/
+
+	/* PET FILTER TABLET STYLES */
+
+	.filter-section {
+		display: grid;
+		grid-auto-rows: auto;
+		grid-template-columns: repeat(4, 1fr);
+		margin: 0 20px 100px;
+	}
+
+	#pet-finder-heading {
+		margin: 75px 0 50px 0; 
+	}
+
+	.filter-section button {
+		grid-column: 4;
+		grid-row: 2;
+		margin-top: 25px;
+		place-self: center;
+	}
+
+	/* PET LIST TABLET STYLES */
+
+	#pet-list {
+		display: grid;
+		gap: 10px;
+		grid-auto-rows: auto;
+		grid-template-columns: 1fr 1fr;
+		width: 90%;
 	}
 }
 
