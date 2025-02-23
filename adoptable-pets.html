@@ -64,30 +64,36 @@
     </header>
 
     <main>
-        <h2>Find your pet</h2>
+        <h2 id="pet-finder-heading">Find your pet</h2>
 
         <section class="filter-section">
             <h2>Filter Results</h2>
-            <label for="pet-type">Type of pet:</label>
-            <select id="pet-type" class="filter-dropdown">
-                <option value="all">Dog / Cat</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-            </select>
+            <div>
+                <label for="pet-type">Type of pet:</label>
+                <select id="pet-type" class="filter-dropdown">
+                    <option value="all">Dog / Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                </select>
+            </div>
 
-            <label for="pet-gender">Sex of pet:</label>
-            <select id="pet-gender" class="filter-dropdown">
-                <option value="all">Male / Female</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
+            <div>
+                <label for="pet-gender">Sex of pet:</label>
+                <select id="pet-gender" class="filter-dropdown">
+                    <option value="all">Male / Female</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
 
-            <label for="pet-age">Age of pet:</label>
-            <select id="pet-age" class="filter-dropdown">
-                <option value="all">Under / Over Year</option>
-                <option value="young">Under 1 year</option>
-                <option value="adult">Over 1 year</option>
-            </select>
+            <div>
+                <label for="pet-age">Age of pet:</label>
+                <select id="pet-age" class="filter-dropdown">
+                    <option value="all">Under / Over Year</option>
+                    <option value="young">Under 1 year</option>
+                    <option value="adult">Over 1 year</option>
+                </select>
+            </div>
 
             <button id="filter-btn">Find Pet</button>
         </section>
@@ -97,8 +103,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="young">
                 <img src="images/animals/sid.png" alt="Close up of puppy named Sid" width="300" height="300">
                 <div>
+                    <h3>Sid</h3>
                     <ul>
-                        <li><strong>Sid</strong></li>
                         <li>Dog</li>
                         <li>Border Collie, Mixed</li>
                         <li>Male</li>
@@ -111,8 +117,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/bear.png" alt="Close up of dog named bear" width="300" height="300">
                 <div>
+                    <h3>Bear</h3>
                     <ul>
-                        <li><strong>Bear</strong></li>
                         <li>Dog</li>
                         <li>Great Pyrenees</li>
                         <li>Male</li>
@@ -125,8 +131,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="adult">
                 <img src="images/animals/glacier.png" alt="Close up of dog named glacier" width="300" height="295">
                 <div>
+                    <h3>Glacier</h3>
                     <ul>
-                        <li><strong>Glacier</strong></li>
                         <li>Dog</li>
                         <li>Husky</li>
                         <li>Female</li>
@@ -139,8 +145,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="adult">
                 <img src="images/animals/noodle.png" alt="Close up of dog named Noodle" width="300" height="295">
                 <div>
+                    <h3>Noodle</h3>
                     <ul>
-                        <li><strong>Noodle</strong></li>
                         <li>Dog</li>
                         <li>Australian Kelpie</li>
                         <li>Female</li>
@@ -153,8 +159,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="young">
                 <img src="images/animals/rocky.png" alt="Close up image of a dog named Rocky" width="300" height="299">
                 <div>
+                    <h3>Rocky</h3>
                     <ul>
-                        <li><strong>Rocky</strong></li>
                         <li>Dog</li>
                         <li>Hound, Labrador Retriever</li>
                         <li>Male</li>
@@ -167,8 +173,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/gillis.png" alt="Close up of a dog named Gillis" width="300" height="299">
                 <div>
+                    <h3>Gillis</h3>
                     <ul>
-                        <li><strong>Gillis</strong></li>
                         <li>Dog</li>
                         <li>Norwegian Elkhound</li>
                         <li>Male</li>
@@ -181,8 +187,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="adult">
                 <img src="images/animals/freddiegirl.png" alt="Close up of a dog named Freddie Girl" width="300" height="292">
                 <div>
+                    <h3>Freddie Girl</h3>
                     <ul>
-                        <li><strong>Freddie Girl</strong></li>
                         <li>Dog</li>
                         <li>Mixed Breed</li>
                         <li>Female</li>
@@ -195,8 +201,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/blue.png" alt="Close up of a dog named Blue" width="300" height="292">
                 <div>
+                    <h3>Blue</h3>
                     <ul>
-                        <li><strong>Blue</strong></li>
                         <li>Dog</li>
                         <li>American Bulldog</li>
                         <li>Male</li>
@@ -209,8 +215,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/roscoe.png" alt="Close up of a dog named Roscoe" width="299" height="300">
                 <div>
+                    <h3>Roscoe</h3>
                     <ul>
-                        <li><strong>Roscoe</strong></li>
                         <li>Dog</li>
                         <li>Australian Cattle Dog, American Bulldog, mixed</li>
                         <li>Male</li>
@@ -223,8 +229,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/sophia.png" alt="Close up of a puppy named Sophia" width="300" height="300">
                 <div>
+                    <h3>Sophia</h3>
                     <ul>
-                        <li><strong>Sophia</strong></li>
                         <li>Dog</li>
                         <li>Border Collie</li>
                         <li>Female</li>
@@ -237,8 +243,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/edith.png" alt="Close up of a puppy named Edith" width="300" height="300">
                 <div>
+                    <h3>Edith</h3>
                     <ul>
-                        <li><strong>Edith</strong></li>
                         <li>Dog</li>
                         <li>Labrador Retriever, mixed</li>
                         <li>Female</li>
@@ -251,8 +257,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/nigel.png" alt="Close up of a dog named Nigel" width="300" height="300">
                 <div>
+                    <h3>Nigel</h3>
                     <ul>
-                        <li><strong>Nigel</strong></li>
                         <li>Dog</li>
                         <li>Labrador Retriever, mixed</li>
                         <li>Male</li>
@@ -265,8 +271,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/minnow.png" alt="Close up of a dog named Minnow" width="300" height="299">
                 <div>
+                    <h3>Minnow</h3>
                     <ul>
-                        <li><strong>Minnow</strong></li>
                         <li>Dog</li>
                         <li>Plott Hound</li>
                         <li>Male</li>
@@ -279,8 +285,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/marley.png" alt="Close up of a puppy named Marley" width="300" height="304">
                 <div>
+                    <h3>Marley</h3>
                     <ul>
-                        <li><strong>Marley</strong></li>
                         <li>Dog</li>
                         <li>Hound, mixed breed</li>
                         <li>Female</li>
@@ -293,8 +299,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/marshmellow.png" alt="Close up of a puppy named marley" width="300" height="304">
                 <div>
+                    <h3>Marshmello</h3>
                     <ul>
-                        <li><strong>Marshmello</strong></li>
                         <li>Dog</li>
                         <li>Hound, mixed breed</li>
                         <li>Female</li>
@@ -307,8 +313,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/mugsy.png" alt="Close up of a puppy named Mugsy" width="300" height="299">
                 <div>
+                    <h3>Mugsy</h3>
                     <ul>
-                        <li><strong>Mugsy</strong></li>
                         <li>Dog</li>
                         <li>Hound, mixed breed</li>
                         <li>Female</li>
@@ -321,8 +327,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="adult">
                 <img src="images/animals/priya.png" alt="Close up of a dog named Priya" width="300" height="304">
                 <div>
+                    <h3>Priya</h3>
                     <ul>
-                        <li><strong>Priya</strong></li>
                         <li>Dog</li>
                         <li>Terrier, mixed breed</li>
                         <li>Female</li>
@@ -335,8 +341,8 @@
             <div class="pet-card" data-type="dog" data-gender="female" data-age="young">
                 <img src="images/animals/locket.png" alt="Close up of a dog name Locket" width="300" height="304">
                 <div>
+                    <h3>Locket</h3>
                     <ul>
-                        <li><strong>Locket</strong></li>
                         <li>Dog</li>
                         <li>Terrier, mixed breed</li>
                         <li>Female</li>
@@ -349,8 +355,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="young">
                 <img src="images/animals/igloo.png" alt="Close up of a dog named Igloo" width="300" height="304">
                 <div>
+                    <h3>Igloo</h3>
                     <ul>
-                        <li><strong>Igloo</strong></li>
                         <li>Dog</li>
                         <li>Huskey, mixed breed</li>
                         <li>Male</li>
@@ -363,8 +369,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="adult">
                 <img src="images/animals/sircharles.png" alt="Close up of a dog named Sir Charles" width="300" height="301">
                 <div>
+                    <h3>Sir Charles</h3>
                     <ul>
-                        <li><strong>Sir Charles</strong></li>
                         <li>Dog</li>
                         <li>German Shepherd, mixed breed</li>
                         <li>Male</li>
@@ -377,8 +383,8 @@
             <div class="pet-card" data-type="dog" data-gender="male" data-age="young">
                 <img src="images/animals/trout.png" alt="Close up of a dog named Trout" width="300" height="300">
                 <div>
+                    <h3>Trout</h3>
                     <ul>
-                        <li><strong>Trout</strong></li>
                         <li>Dog</li>
                         <li>Hound</li>
                         <li>Male</li>
@@ -391,8 +397,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/eclipse.png" alt="Close up of a cat named Eclipse" width="300" height="301">
                 <div>
+                    <h3>Eclipse</h3>
                     <ul>
-                        <li><strong>Eclipse</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Hair</li>
                         <li>Male</li>
@@ -405,8 +411,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="young">
                 <img src="images/animals/tootsie.png" alt="Close up of a cat named Tootsie" width="300" height="300">
                 <div>
+                    <h3>Tootsie</h3>
                     <ul>
-                        <li><strong>Tootsie</strong></li>
                         <li>Cat</li>
                         <li>Domestic Medium Hair</li>
                         <li>Female</li>
@@ -419,8 +425,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="young">
                 <img src="images/animals/tater.png" alt="Close up of a cat named Tater" width="300" height="300">
                 <div>
+                    <h3>Tater</h3>
                     <ul>
-                        <li><strong>Tater</strong></li>
                         <li>Cat</li>
                         <li>Domestic Medium Hair</li>
                         <li>Female</li>
@@ -433,8 +439,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/nutmeg.png" alt="Close up of a cat named Nutmeg" width="301" height="301">
                 <div>
+                    <h3>Nutmeg</h3>
                     <ul>
-                        <li><strong>Nutmeg</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Male</li>
@@ -447,8 +453,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="adult">
                 <img src="images/animals/gosling.png" alt="Close up of a cat named Gosling" width="300" height="300">
                 <div>
+                    <h3>Gosling</h3>
                     <ul>
-                        <li><strong>Gosling</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>
@@ -461,8 +467,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="adult">
                 <img src="images/animals/opal.png" alt="Close up of a cat named Opal" width="300" height="300">
                 <div>
+                    <h3>Opal</h3>
                     <ul>
-                        <li><strong>Opal</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>
@@ -475,8 +481,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="adult">
                 <img src="images/animals/honey.png" alt="Close up of a cat named Honey" width="300" height="300">
                 <div>
+                    <h3>Honey</h3>
                     <ul>
-                        <li><strong>Honey</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>
@@ -489,8 +495,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/skeeter.png" alt="Close up of a cat named Skeeter" width="300" height="300">
                 <div>
+                    <h3>Skeeter</h3>
                     <ul>
-                        <li><strong>Skeeter</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Male</li>
@@ -503,8 +509,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="young">
                 <img src="images/animals/seraphina.png" alt="Close up of a cat named Seraphina" width="300" height="303">
                 <div>
+                    <h3>Seraphina</h3>
                     <ul>
-                        <li><strong>Seraphina</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>
@@ -517,8 +523,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="adult">
                 <img src="images/animals/omi.png" alt="Close up of a cat named Omi" width="300" height="304">
                 <div>
+                    <h3>Omi</h3>
                     <ul>
-                        <li><strong>Omi</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>
@@ -531,8 +537,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/simon.png" alt="Close up of a cat named Simon" width="298" height="303">
                 <div>
+                    <h3>Simon</h3>
                     <ul>
-                        <li><strong>Simon</strong></li>
                         <li>Cat</li>
                         <li>Domestic Long Haired</li>
                         <li>Male</li>
@@ -545,8 +551,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/mrcreamsicle.png" alt="Close up of a cat named Mr Creamsicle" width="300" height="305">
                 <div>
+                    <h3>Mr Creamsicle</h3>
                     <ul>
-                        <li><strong>Mr Creamsicle</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Male</li>
@@ -559,8 +565,8 @@
             <div class="pet-card" data-type="cat" data-gender="male" data-age="adult">
                 <img src="images/animals/amos.png" alt="Close up of a cat named Amos" width="300" height="300">
                 <div>
+                    <h3>Amos</h3>
                     <ul>
-                        <li><strong>Amos</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Male</li>
@@ -573,8 +579,8 @@
             <div class="pet-card" data-type="cat" data-gender="female" data-age="adult">
                 <img src="images/animals/angelique.png" alt="Close up of a cat named Angelique" width="300" height="300">
                 <div>
+                    <h3>Angelique</h3>
                     <ul>
-                        <li><strong>Angelique</strong></li>
                         <li>Cat</li>
                         <li>Domestic Short Haired</li>
                         <li>Female</li>

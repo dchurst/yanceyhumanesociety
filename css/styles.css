@@ -68,13 +68,11 @@ body {
 h1, h2, h3 {
 	color: var(--black);
 	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
 	font-style: normal;
 }
 
 p, a, label, span, option, li, address, button, select {
 	font-family: "Source Sans 3", serif;
-    font-optical-sizing: auto;
 	font-size: 16px;
     font-style: normal;
 }
@@ -89,11 +87,12 @@ h1 {
 
 h2 {
     font-size: 24px;
-	font-weight: 900px;
+	font-weight: 700;
 }
 
 h3 {
     font-size: 20px;
+	font-weight: 500;
 }
 
 img {
@@ -477,7 +476,7 @@ footer {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	margin-top: 30px;
+	margin: 50px;
 }
 
 #efforts-cta h2 {
@@ -515,6 +514,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
+	padding: 50px 0;
 	width: 85%;
 }
 
@@ -524,6 +524,10 @@ footer {
 
 #efforts-additional-info img {
 	margin-bottom: 10px;
+}
+
+#efforts-additional-info div {
+	margin-bottom: 40px;
 }
 
 #efforts-additional-info div section {
@@ -553,7 +557,8 @@ footer {
 /* IMPACT INFO STYLES */
 
 #impact {
-	margin: 25px auto;
+	margin: 10px auto;
+	padding-bottom: 60px;
 	text-align: center;
 	width: 95%;
 }
@@ -576,6 +581,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin: 25px auto;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -615,6 +621,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin: 30px auto;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -660,11 +667,11 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	width: 95%;
+	width: 85%;
 }
 
 #special-offers h2 {
-	margin: 30px 0 15px 0;
+	margin: 30px 0 25px 0;
 }
 
 #offers-grid {
@@ -676,7 +683,7 @@ footer {
 }
 
 .offers-content {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .offers-content h3 {
@@ -691,5 +698,271 @@ footer {
 	background-color: var(--green);
 	color: var(--white);
 	padding: 5px 20px;
+	text-decoration: none;
+}
+
+/***** ADOPTION INFO STYLES *****/
+
+/* HERO BANNER STYLES */
+
+#adoptinfo-herobanner {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 100px;
+}
+
+#adoptinfo-herobanner img {
+	margin-top: 200px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#adoptinfo-herobanner section {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0 auto;
+	text-align: center;
+	width: 95%;
+}
+
+#adoptinfo-herobanner section h2,
+#adoptinfo-herobanner section p {
+	margin-bottom: 15px;
+}
+
+#adoptinfo-herobanner section a {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+/* ADOPTION INFO STYLES */
+
+#adoption-info {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 85%;
+}
+
+#adoption-info h2 {
+	margin: 30px 0 20px 0;
+}
+
+#adoption-info p {
+	margin: 10px 0;
+}
+
+/* IMPORTANT ADOPT INFO STYLES */
+
+#important-adopt-info {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 85%;
+}
+
+#important-adopt-info h2 {
+	margin: 30px 0 20px 0;
+	text-align: center;
+}
+
+#important-adopt-info p,
+#important-adopt-info ul li {
+	margin: 10px 0;
+}
+
+#important-adopt-info ul {
+	list-style: disc;
+	margin-left: 45px;
+}
+
+#important-adopt-info ul li {
+	line-height: 1.5;
+}
+
+/* ADOPTION FEES STYLES */
+
+#adoption-fees {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 85%;
+}
+
+#adoption-fees h2 {
+	margin: 30px 0 20px 0;
+}
+
+#adoption-fees p {
+	margin: 10px 0;
+}
+
+#adoption-fees div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+#adoption-fees section {
+	border: 1px var(--black) solid;
+	margin-bottom: 15px;
+	padding: 25px 50px;
+	width: 65%;
+}
+
+#adoption-fees section h3 {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#adoption-fees section ul {
+	list-style: disc;
+	margin-bottom: 20px;
+}
+
+#adoption-fees section ul li {
+	margin-bottom: 5px;
+}
+
+#adoption-fees section:nth-of-type(2) p {
+	font-size: 12px;
+}
+
+/* ADOPTION FAQS STYLES */
+
+#adoption-faqs {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 50px auto;
+	width: 85%;
+}
+
+#adoption-faqs h2 {
+	margin: 30px 0 20px 0;
+}
+
+#adoption-faqs ul {
+	list-style: none;
+}
+
+#adoption-faqs ul li {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px var(--black) solid;
+}
+
+#adoption-faqs ul li::before {
+	content: "▶"; 
+    color: var(--black);
+	margin-right: 15px;
+}
+
+/***** ADOPTION INFO STYLES *****/
+
+/* FILTER STYLES */
+
+#pet-finder-heading {
+	margin: 120px 0 30px 0;
+	text-align: center;
+}
+
+.filter-section {
+	background-color: var(--green);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 30px auto 60px;
+	padding: 30px 15px;
+}
+
+.filter-section h2,
+.filter-section div label {
+	color: var(--white);
+}
+
+.filter-section h2 {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	margin-bottom: 10px;
+}
+
+.filter-section div {
+	display: flex;
+	flex-direction: column;
+	grid-row: 2;
+	margin: 10px 5px;
+}
+
+.filter-section div label {
+	margin-bottom: 1px;
+}
+
+.filter-section div select {
+	padding: 2px;
+}
+
+.filter-section button {
+	border: 1px var(--white) solid;
+	border-radius: 10px;
+	grid-column: 1 / 3;
+	grid-row: 3;
+	margin: 15px 0 0 5px;
+	padding: 5px;
+	width: 150px;
+}
+
+/* PET LIST STYLES */
+
+#pet-list {
+	margin: 0 auto;
+	width: 85%;
+}
+
+#pet-list h2 {
+	display: none;
+}
+
+.pet-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 60px;
+}
+
+.pet-card div {
+	margin-left: 15px;
+}
+
+.pet-card div h3 {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.pet-card div ul {
+	margin: 5px 0 15px 20px;
+}
+
+.pet-card div ul li {
+	list-style: disc;
+	margin: 0 0 7px;
+}
+
+.pet-card div ul li strong {
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.pet-card div a {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px 10px;
 	text-decoration: none;
 }
