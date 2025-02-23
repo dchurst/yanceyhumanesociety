@@ -63,7 +63,6 @@ table {
 body {
     background-color: var(--white);
     line-height: 1.25;
-    margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -73,10 +72,10 @@ h1, h2, h3 {
 	font-style: normal;
 }
 
-p, a, label, span, option, li, address, button {
+p, a, label, span, option, li, address, button, select {
 	font-family: "Source Sans 3", serif;
     font-optical-sizing: auto;
-	font-size: 18px;
+	font-size: 16px;
     font-style: normal;
 }
 
@@ -89,7 +88,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 24px;
 	font-weight: 900px;
 }
 
@@ -438,8 +437,259 @@ footer {
 
 /********** INDIVIDUAL PAGE STYLES **********/
 
-/* HOME PAGE STYLES */
+/***** HOME PAGE STYLES *****/
+
+/* HERO BANNER STYLES */
+
+#home-hero-banner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 100px;
+}
 
 #home-hero-banner img {
+	grid-column: 1 / 3;
+	grid-row: 1;
 	padding-top: 50px;
+}
+
+#home-hero-banner div {
+	grid-column: 1 / 3;
+	grid-row: 1;
+	margin: 10px;
+	width: 275px;
+}
+
+#home-hero-banner div h2 {
+	margin-bottom: 20px;
+}
+
+#home-hero-banner div a {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+/* MAIN EFFORTS CTA STYLES */
+
+#efforts-cta {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+#efforts-cta h2 {
+	margin-bottom: 5px;
+}
+
+#efforts-cta section {
+	display: flex;
+	flex-direction: column;
+	margin: 25px auto;
+	width: 200px;
+}
+
+#efforts-cta section img,
+#efforts-cta section h3 {
+	margin-bottom: 5px;
+}
+
+#efforts-cta section p {
+	margin-bottom: 15px;
+}
+
+#efforts-cta section a {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px 10px;
+	text-decoration: none;
+	width: 100px;
+}
+
+/* MAIN EFFORTS ADDITIONAL INFO STYLES */
+
+#efforts-additional-info {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 85%;
+}
+
+#efforts-additional-info h2 {
+	margin: 30px 0;
+}
+
+#efforts-additional-info img {
+	margin-bottom: 10px;
+}
+
+#efforts-additional-info div section {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#efforts-additional-info div section h3 {
+	margin-bottom: 5px;
+}
+
+#efforts-additional-info div section p {
+	margin: 5px 0;
+}
+
+#efforts-additional-info div section a {
+	background-color: var(--green);
+	color: var(--white);
+	margin: 10px 0 25px 0;
+	padding: 5px 10px;
+	text-decoration: none;
+	width: 100px;
+}
+
+/* IMPACT INFO STYLES */
+
+#impact {
+	margin: 25px auto;
+	text-align: center;
+	width: 95%;
+}
+
+#impact div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	margin-top: 20px;
+}
+
+#impact div section {
+	margin: 10px;
+}
+
+/* DONATION STYLES */
+
+#donate {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 25px auto;
+	text-align: center;
+}
+
+#donate h2 {
+	margin: 10px 0 30px 0;
+}
+
+#donate section {
+	align-items: center;
+	background-color: var(--brown);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	width: 170px;
+}
+
+#donate section h3 {
+	color: var(--white);
+	margin-bottom: 30px;
+}
+
+#donate section button {
+	background-color: var(--black);
+	border: 1px var(--black) solid;
+	border-radius: 20px;
+	color: var(--white);
+	font-weight: 500;
+	margin-bottom: 20px;
+	padding: 5px 40px;
+}
+
+/* PET SEARCH STYLES */
+
+#pet-search {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto;
+	text-align: center;
+}
+
+#pet-search h2 {
+	margin: 10px 0 30px 0;
+}
+
+#pet-search form {
+	background-color: var(--green);
+	border-radius: 20px;
+	padding: 20px;
+}
+
+#pet-search form div {
+	display: flex;
+	flex-direction: column;
+}
+
+#pet-search form div label {
+	color: var(--white);
+	margin-bottom: 5px;
+}
+
+#pet-search form div select {
+	border-radius: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+#pet-search form button {
+	background-color: var(--white);
+	border: 1px var(--white) solid;
+	border-radius: 20px;
+	color: var(--black);
+	margin-top: 20px;
+	padding: 5px 25px;
+}
+
+/* SPECIAL OFFERS STYLES */
+
+#special-offers {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 95%;
+}
+
+#special-offers h2 {
+	margin: 30px 0 15px 0;
+}
+
+#offers-grid {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	max-width: 500px;
+}
+
+.offers-content {
+	margin-bottom: 30px;
+}
+
+.offers-content h3 {
+	margin-bottom: 10px;
+}
+
+.offers-content p {
+	margin: 10px 0 15px;
+}
+
+.offers-content a {
+	background-color: var(--green);
+	color: var(--white);
+	padding: 5px 20px;
+	text-decoration: none;
 }
