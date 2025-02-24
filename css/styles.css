@@ -1308,6 +1308,11 @@ footer {
 
 	/* DESKTOP GENERAL STYLES */
 
+	main {
+		margin: 0 auto;
+		max-width: 1440px;
+	}
+
 	h2 {
 		font-size: 38px;
 	}
