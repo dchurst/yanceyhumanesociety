@@ -101,6 +101,14 @@ img {
     max-width: 100%;
 }
 
+button {
+	transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
 /* SKIP LINK */
 
 #skip {
@@ -155,8 +163,21 @@ h1 {
 	text-decoration: none;
 }
 
+#utilities ul:first-of-type li a:hover {
+	color: var(--black);
+	transition: 0.3s ease-in-out;
+}
+
 #utilities ul:nth-of-type(2) li {
 	margin: 20px 25px;
+}
+
+#utilities ul:nth-of-type(2) li a img {
+	transition: transform 0.3s ease-in-out;
+}
+
+#utilities ul:nth-of-type(2) li a:hover img {
+	transform: scale(1.2)
 }
 
 #utilities span {
@@ -228,6 +249,11 @@ h1 {
 #nav-links a {
 	color: var(--black);
 	text-decoration: none;
+}
+
+#nav-links a:hover {
+	color: var(--brown);
+	transition: 0.3s ease-in-out;
 }
 
 #nav-dropdown:checked ~ #nav-links {
@@ -304,6 +330,11 @@ footer {
 	text-decoration: none;
 }
 
+#quick-links nav li a:hover {
+	color: var(--black);
+	transition: 0.3s ease-in-out;
+}
+
 #footer-utilities {
 	grid-row: 4;
 }
@@ -317,12 +348,25 @@ footer {
 	font-size: 16px;
 }
 
+#footer-utilities li a:hover {
+	color: var(--black);
+	transition: 0.3s ease-in-out;
+}
+
 #socials {
 	grid-row: 3;
 }
 
 #socials ul li {
 	padding: 0 10px;
+}
+
+#socials ul li a img {
+	transition: transform 0.3s ease-in-out;
+}
+
+#socials ul li a:hover img {
+	transform: scale(1.2);
 }
 
 #policies li {
@@ -333,6 +377,11 @@ footer {
 	color: var(--white);
 	font-size: 10px;
 	text-decoration: none;
+}
+
+#policies li a:hover {
+	color: var(--black);
+	transition: 0.3s ease-in-out;
 }
 
 /* EMAIL SIGNUP STYLES */
@@ -465,9 +514,15 @@ footer {
 
 #home-hero-banner div a {
 	background-color: var(--green);
+	display: inline-block;
 	color: var(--white);
 	padding: 5px 10px;
 	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+}
+
+#home-hero-banner div a:hover {
+	transform: scale(1.1);
 }
 
 /* MAIN EFFORTS CTA STYLES */
@@ -502,9 +557,15 @@ footer {
 #efforts-cta section a {
 	background-color: var(--green);
 	color: var(--white);
+	display: inline-block;
 	padding: 5px 10px;
 	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
 	width: 100px;
+}
+
+#efforts-cta section a:hover {
+	transform: scale(1.1);
 }
 
 /* MAIN EFFORTS ADDITIONAL INFO STYLES */
@@ -548,10 +609,16 @@ footer {
 #efforts-additional-info div section a {
 	background-color: var(--green);
 	color: var(--white);
+	display: inline-block;
 	margin: 10px 0 25px 0;
 	padding: 5px 10px;
 	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
 	width: 100px;
+}
+
+#efforts-additional-info div section a:hover {
+	transform: scale(1.1);
 }
 
 /* IMPACT INFO STYLES */
@@ -697,8 +764,14 @@ footer {
 .offers-content a {
 	background-color: var(--green);
 	color: var(--white);
+	display: inline-block;
 	padding: 5px 20px;
 	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+}
+
+.offers-content a:hover {
+	transform: scale(1.1);
 }
 
 /***** ADOPTION INFO STYLES *****/
@@ -736,8 +809,14 @@ footer {
 #adoptinfo-herobanner section a {
 	background-color: var(--green);
 	color: var(--white);
+	display: inline-block;
 	padding: 5px 20px;
 	text-decoration: none;
+	transition: transform 0.3s ease-in-out;
+}
+
+#adoptinfo-herobanner section a:hover {
+	transform: scale(1.1);
 }
 
 /* ADOPTION INFO STYLES */
@@ -965,6 +1044,15 @@ footer {
 	color: var(--white);
 	padding: 5px 10px;
 	text-decoration: none;
+}
+
+.details-btn {
+    display: inline-block; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.details-btn:hover {
+    transform: scale(1.1); 
 }
 
 /********** TABLET STYLES **********/
