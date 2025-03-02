@@ -20,11 +20,11 @@ document.getElementById("filter-btn").addEventListener("click", function () {
         const matchesGender = (selectedGender === "all" || petGender === selectedGender);
         const matchesAge = (selectedAge === "all" || petAge === selectedAge);
 
-        // Show or hide pet cards based on filter match
+        // Toggle visibility class instead of using display property
         if (matchesType && matchesGender && matchesAge) {
-            card.style.display = "block";
+            card.classList.remove("hidden");
         } else {
-            card.style.display = "none";
+            card.classList.add("hidden");
         }
     });
 });
