@@ -1061,7 +1061,7 @@ footer {
 
 /********** TABLET STYLES **********/
 
-@media screen and (min-width:834px) {
+@media screen and (min-width:768px) {
 
 	/* TABLET GENERAL STYLES */
 
@@ -1396,13 +1396,13 @@ footer {
 
 /********** DESKTOP STYLES **********/
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1280px) {
 
 	/* DESKTOP GENERAL STYLES */
 
 	main {
 		margin: 0 auto;
-		max-width: 1440px;
+		max-width: 1920px;
 	}
 
 	h2 {
