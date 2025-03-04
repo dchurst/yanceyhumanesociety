@@ -1402,7 +1402,7 @@ footer {
 
 	main {
 		margin: 0 auto;
-		max-width: 1920px;
+		max-width: 1440px;
 	}
 
 	h2 {
@@ -1521,6 +1521,7 @@ footer {
 	/* ADDITIONAL INFO DESKTOP STYLES */
 
 	#efforts-additional-info {
+		margin: 0 auto;
 		width: 100%;
 	}
 
